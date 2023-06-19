@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.corpo {
+  background-color: black;
+}
+
+.h2 {
+  text-align: center;
+}
+
+/* Estrutura */
+.cabecalho h1 {
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+  font-size: 2rem;
+  background-color: rgb(255, 122, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.rodape {
+  height: 81px;
+  line-height: 70px;
+  background-color: rgb(255, 122, 0);
+  margin-top: 23%;
+}
+
+.fundotabela {
+  background-color: rgb(255, 122, 0);
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  margin: 5vh auto;
+  padding: 50px;
+  box-shadow: 2px 2px 10px #c9e3f8;
+  gap: 20px;
+
+}
+
+.button {
+  border-style: none;
+  height: 40px;
+  padding: 6px 12px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow .6s ease;
+}
+
+button.red {
+  background-color: #FF4949;
+
+}
+
+button.red:hover {
+  background-color: #FF4949;
+  color: black;
+}
+
+
+/* Tabela */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: solid 1px black;
+}
+
+th {
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background-color: rgb(255, 122, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: solid 1px black;
+}
+
+td {
+
+  padding: 8px;
+  text-align: left;
+  border: solid 1px black;
+}
+
+.atrasada {
+  color: red;
+}
+
+.emandamento {
+  color: green
+}
+
+.concluida {
+  background-color: lightgreen;
+}
+
+
+
+
+/*modais*/
+.conteudomodal h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.conteudomodal form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.conteudomodal label {
+  margin-top: 10px;
+}
+
+.input-titulo {
+  height: 3em;
+  border-radius: 5px;
+}
+
+.input-desc {
+
+  height: 3em;
+  border-radius: 5px;
+}
+
+.input-horario {
+
+  height: 3em;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.btn-salvar {
+  margin-left: 160px;
+  width: 40%;
+  margin-top: 20px;
+  height: 3em;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.btn-salvar:hover {
+  background-color: rgb(171, 202, 175);
+}
+
+.fecharmodal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 5%;
+}
+
+.fecharmodal:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: fixed;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+
+  padding: 20px;
+  border: solid 1px black;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  height: 80%;
+  border-radius: 10px;
+
+}
+
+.modal-content h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.edit-titulo {
+  margin-top: 20px;
+  height: 3em;
+  border-radius: 5px;
+}
+
+.edit-desc {
+  margin-top: 20px;
+  height: 3em;
+  border-radius: 5px;
+}
+
+.edit-horario {
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 3em;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.edit-btn {
+  margin-top: 20px;
+  margin-left: 30%;
+  width: 40%;
+  margin-top: 20px;
+  height: 3em;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.modal-checkbox {
+  display: none;
+}
+
+.modal-checkbox:checked+.modal {
+  display: block;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-abrirmodal {
+  cursor: pointer;
+  width: 75px;
+  background-color: rgb(27, 65, 170);
+  padding: 12px;
+  color: white;
+
+}
+
+.btn-abrirmodal:hover {
+  background-color: rgb(27, 65, 170);
+  color: black;
+}
+
+.modalcriar {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.checkboxmodal {
+  display: none;
+}
+
+.modalcriar.fecharmodal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+}
+
+.modalcriar.fecharmodal:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.modalcriar .conteudomodal {
+  position: fixed;
+  border: solid 1px black;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  height: 70%;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  border-radius: 10px;
+}
+
+.abrirmodal:hover {
+  cursor: pointer;
+}
+
+#modalexemplo:checked+.modalcriar {
+  display: block;
+}
+
+.abrirmodal {
+  margin-left: 80%;
+  position: relative;
+  cursor: pointer;
+  padding: 12px;
+  color: white;
+  right: 0;
+  background-color: rgb(255, 122, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.abrirmodal:hover {
+  background-color: rgb(255, 122, 0);
+  color: black;
+}
+
+.titulo-rodape {
+
+  margin-top: 100px;
+
+}
